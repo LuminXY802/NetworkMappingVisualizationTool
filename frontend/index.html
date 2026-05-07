@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Godzilla Network Scanner</title>
+</head>
+<body>
+
+    <header>
+        <div id="branding">
+            <img src="placeholder.jpeg" alt="this is just a placeholder">
+            <div>
+                <button id="b-wToggle">dark mode superior, but there's an option for light</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="title">
+        <h1>Welcome the the Godzilla Network Mapper</h1>
+        <p>
+            Godzilla Network Mapper is a visualization-focused reconnaissance tool designed to help map and understand network infrastructure in real time. By combining network scanning, topology mapping, and interactive visualization, this platform aims to make the reconnaissance and enumeration process more intuitive, efficient, and informative for analysts, administrators, security professionals, and cybersecurity students!
+        </p>
+    </div>
+
+    <div class="application-container">
+
+        <div id="sidebar-controls">
+
+            <h1>Sidebar Controls</h1>
+
+            <div class="ipAddress ip-input-field">
+                <label for="Target">Input the IP Address here: </label>
+                <input type="text" name="ip-address" id="ipAddr">
+            </div>
+
+            <div class="profileScans">
+                <label for="Scan Profiles">Choose a profile to scan: </label>
+                <select name="scanProfile" id="scanProfiles">
+                    <option value=""></option>
+                </select>
+            </div>
+            
+            <div class="scanOptions">
+                <label for="scanOptions">Choose your scan options here: </label>
+
+            </div>
+
+            <div class="actions">
+                <label for="actions">Actions will happen here: </label>
+                <button id="start" type="button">start</button>
+                <button id="stop" type="button">stop</button>
+            </div>
+
+        </div>
+
+        <div class="graph-area">
+            <div class="graph-container">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-panel">
+        
+    </div>
+
+</body>
+</html>
