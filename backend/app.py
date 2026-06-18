@@ -7,8 +7,8 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(
     __name__,
-    template_folder=os.path.join(BASE_DIR, "../frontend"),
-    style_folder=os.path.join(BASE_DIR, "../frontend/style")
+    template_folder=os.path.join(BASE_DIR, "../frontend/templates"),
+    static_folder=os.path.join(BASE_DIR, "../frontend/static")
 )
 
 
@@ -17,7 +17,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/scanner", methods=["POST"])
+@app.route("/scan", methods=["POST"])
 def scan():
     data = request.get_json()
 
