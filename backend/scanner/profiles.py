@@ -1,7 +1,6 @@
 """
 The profiles file will serve to be the execution logic for each of the tools
 """
-import scanner.tools as tools
 import scanner.tools.arp_module as arp
 import scanner.tools.icmp_module as icmp
 import scanner.tools.nmap_module as nmap
