@@ -1,4 +1,4 @@
-import profiles
+import scanner.profiles as profiles
 
 
 def execute_tool(tool_name, target):

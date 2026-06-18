@@ -1,8 +1,8 @@
-from profiles import SCAN_PROFILES
+import scanner.profiles as profiles
 import subprocess
 
 def run_scan(profile, target):
-    profile = SCAN_PROFILES[profile]
+    profile = profiles.SCAN_PROFILES[profile]
 
     subprocess.run(
         hosts=target,

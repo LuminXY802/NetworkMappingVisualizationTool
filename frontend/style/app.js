@@ -5,7 +5,7 @@ document.getElementById("startBtn").addEventListener("click", async () => {
 
     log(`Starting scan on ${target} with ${profile}`);
 
-    const res = await fetch("/scan", {
+    const res = await fetch("/scanner", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
