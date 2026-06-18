@@ -28,6 +28,13 @@ DISCOVERY_PROFILES = {
     }
 }
 
+SCAN_PROFILES = {
+    "os_detection": "-O",
+    "service_detection": "-sV",
+    "tcp_scan": "-sS",
+    "full_scan": "-A"
+}
+
 TOOL_REGISTRY = {
     "icmp_ping": tools.icmp_module.run,
     "arp_scan": tools.arp_module.run,
