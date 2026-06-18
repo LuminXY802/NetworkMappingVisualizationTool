@@ -1,10 +1,6 @@
-import scanner.profiles as profiles
-import subprocess
-
-def run_scan(profile, target):
-    profile = profiles.SCAN_PROFILES[profile]
-
-    subprocess.run(
-        hosts=target,
-        arguments=profile["arguments"]
-    )
+def nmap_host_discovery(target):
+    return {
+        "type": "nmap",
+        "target": target,
+        "hosts": []
+    }

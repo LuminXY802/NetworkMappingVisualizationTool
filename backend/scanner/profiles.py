@@ -1,9 +1,9 @@
 """
 The profiles file will serve to be the execution logic for each of the tools
 """
-import scanner.tools.arp_module as arp
-import scanner.tools.icmp_module as icmp
-import scanner.tools.nmap_module as nmap
+import scanner.tools.arp_module as arp_scan
+import scanner.tools.icmp_module as icmp_ping
+import scanner.tools.nmap_module as nmap_host_discovery
 
 DISCOVERY_PROFILES = {
     "quick_discovery": {
@@ -38,7 +38,7 @@ SCAN_PROFILES = {
 }
 
 TOOL_REGISTRY = {
-    "icmp_ping": icmp,
-    "arp_scan": arp,
-    "nmap_host_discovery": nmap
+    "icmp_ping": icmp_ping,
+    "arp_scan": arp_scan,
+    "nmap_host_discovery": nmap_host_discovery
 }
